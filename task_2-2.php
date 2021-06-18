@@ -29,7 +29,7 @@ $arr3 = [
 	"ssl" => "Essential",
 	"db" => [
 		"port" => 8080,
-		"host" => host,
+		"host" => "Host",
 		"login" => 123123,
 		"password" => "qwerty123"
 	]
