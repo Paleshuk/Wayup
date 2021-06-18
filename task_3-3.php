@@ -6,15 +6,15 @@ const PASSWORD = "secret123";
 $tmp_login = "admin";
 $tmp_password = "secret123";
 
-if ($tmp_login === LOGIN && $tmp_password !== "secret123") {
-    echo "Check correct your password";
-} elseif ($tmp_login !== "admin") {
+if ($tmp_login !== LOGIN) {
     echo "User not found";
-} elseif ($tmp_login === LOGIN && $tmp_password === "secret123") {
-    echo "Auth success";
+} else {
+    if ($tmp_password !== PASSWORD) {
+        echo "Incorrect password";
+    } else {
+        echo "Auth success";
+    }
 }
-
-echo "<br>";
 
 $isStatus = true;
 
@@ -22,9 +22,9 @@ $statusResult = $isStatus ? 43224656 : 98645623;
 
 echo $statusResult;
 
-echo "<br>";
+$typeCar = "Toyota";
 
-switch ($typeCar = "Toyota") {
+switch ($typeCar) {
     case "BMW":
         echo "Selected is a very good car";
         break;
