@@ -28,6 +28,16 @@ for($i = 0; $i < count($todos); $i++) {
     echo "<p>" . $todos[$i]["status"] . "</p>";
 }
 
+for($i = 0; $i < count($todos); $i++) {
+    echo "<h2>" . $todos[$i]["title"] . "</h2>";
+    foreach ($todos[$i] as $key => $value) {
+        if($key == "title") {
+            continue;
+        }
+        echo "<p>" . $value . "</p>";
+    }
+}
+
 $i = 0;
 
 while($i < count($todos)) {
