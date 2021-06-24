@@ -49,9 +49,9 @@ while($i < count($todos)) {
     $i++;
 }
 
-foreach ($todos as $todo) {
-    echo "<p>" . $todo["id"] . "</p>" . 
-         "<h2>" . $todo["title"] . "</h2>" . 
-         "<p>" . $todo["date"] . "</p>" . 
-         "<p>" . $todo["status"] . "</p>";
+foreach ($todos as $v) {
+    echo "<p>" . $v["id"] . "</p>" . 
+         "<h2>" . $v["title"] . "</h2>" . 
+         "<p>" . $v["date"] . "</p>" . 
+         "<p>" . $v["status"] . "</p>";
 }
