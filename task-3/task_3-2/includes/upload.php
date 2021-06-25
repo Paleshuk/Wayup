@@ -1,7 +1,5 @@
 <?php
 
-print_r($_FILES);
-
 $ftype = $_FILES["image"]["type"];
 
 if ($ftype !== "image/png" && $ftype !== "image/jpeg") {
