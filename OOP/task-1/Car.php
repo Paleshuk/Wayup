@@ -28,7 +28,7 @@ class Car {
     public function save() {
         $content = "Model: $this->model\nColor: $this->color\nHorsepower: $this->horsepower\nProduction year: $this->production_year\n\n";
 
-        $f = fopen('reports/model_production_year.txt', 'w');
+        $f = fopen("reports/{$this->model}_{$this->production_year}.txt", 'w');
         fwrite($f, $content);
         fclose($f);
     } 

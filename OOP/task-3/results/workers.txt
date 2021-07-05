@@ -1,3 +1,2 @@
 Name: Ivan Email: ivan@mail.su Age: 21 Profession: QA
-Name: Ivan Email: ivan@mail.su Age: 21 Profession: QA
-Name: Alex Email: alex@mail.su Age: 22 Profession: QA
+Name: Iwan Email: iwan@mail.su Age: 45 Profession: QA

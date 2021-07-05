@@ -13,15 +13,15 @@ class Equation {
     }
 
     private function discriminant() {
-        return ($this->b)**2 - (4 * $this->a * $this->c);
+        return ($this->b)**2 - 4 * ($this->a) * ($this->c);
     }
 
     private function x1() {
-        return -$this->b + sqrt($this->discriminant()) / 2 * $this->a;
+        return (-$this->b + sqrt($this->discriminant())) / (2 * $this->a);
     }
 
     private function x2() {
-        return -$this->b - sqrt($this->discriminant()) / 2 * $this->a;
+        return (-$this->b - sqrt($this->discriminant())) / (2 * $this->a);
     }
     
     public function result() {

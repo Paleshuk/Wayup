@@ -8,13 +8,28 @@ class Worker {
 
     public static function create($worker) {
         
-        if (array_key_exists('name', $worker) 
+        if (
+            array_key_exists('name', $worker) 
             && array_key_exists('email', $worker) 
             && array_key_exists('age', $worker) 
             && array_key_exists('profession', $worker)
-        ) {
-            $worker['register_time'] = date('d-m-Y H:i');
-            self::$workers[] = $worker;
+        ) { 
+            if (
+                isset($worker['name'])
+                && isset($worker['email'])
+                && isset($worker['age'])
+                && isset($worker['profession'])
+            ) { 
+                if (
+                    ($worker['name'] !== '')
+                    && ($worker['email'] !== '')
+                    && ($worker['age'] !== '')
+                    && ($worker['profession'] !== '')
+                ) {
+                    $worker['register_time'] = date('d-m-Y H:i');
+                    self::$workers[] = $worker;
+                }     
+            }  
         }
     }
 
