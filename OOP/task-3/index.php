@@ -39,94 +39,19 @@ error_reporting(E_ALL);
 
 \App\Classes\Worker::create(
     [
-        'name' => 'Ivan',
-        'age' => 21,
-        'profession' => 'QA'
-    ]
-);
-
-\App\Classes\Worker::create(
-    [
-        'name' => 'Iwan',
-        'email' => 'iwan@mail.su',
+        'name' => 'Michael',
+        'email' => 'michael@mail.su',
         'age' => 45,
         'profession' => 'QA'
     ]
 );
 
-\App\Classes\Worker::create(
-    [
-        'name' => 'Ivan',
-        'email' => 'ivan@mail.su',
-        'age12' => 21,
-        'profession' => 'QA'
-    ]
-);
-
-\App\Classes\Worker::create(
-    [
-       
-    ]
-);
-
-
 print_r(\App\Classes\Worker::all());
-
 
 \App\Classes\Worker::save();
 
-\App\Classes\Finder::create(
-    [
-        'name' => 'Ivan',
-        'email' => 'ivan@mail.su',
-        'age' => 21,
-        'profession' => 'QA'
-    ]
-);
-
-\App\Classes\Finder::create(
-    [
-        'name' => 'Ivan',
-        'email' => 'ivan@mail.su',
-        'age' => 21,
-        'profession' => 'QA'
-    ]
-);
-
-\App\Classes\Finder::create(
-    [
-        'name' => 'Alex',
-        'email' => 'alex@mail.su',
-        'age' => 22,
-        'profession' => 'QA'
-    ]
-);
-
-\App\Classes\Finder::create(
-    [
-        'name' => 'Ivan',
-        'age' => 21,
-        'profession' => 'QA'
-    ]
-);
-
-\App\Classes\Finder::create(
-    [
-        'name' => 'Ivan',
-        'email' => 'ivan@mail.su',
-        'age1' => 21,
-        'profession' => 'QA'
-    ]
-);
-
-\App\Classes\Finder::create(
-    [
-       
-    ]
-);
-
-
 print_r(\App\Classes\Finder::find('ivan@mail.su'));
+print_r(\App\Classes\Finder::find('michael@mail.su'));
 
 ?>
 </pre>

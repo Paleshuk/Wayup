@@ -1,2 +1,2 @@
 Name: Ivan Email: ivan@mail.su Age: 21 Profession: QA
-Name: Iwan Email: iwan@mail.su Age: 45 Profession: QA
+Name: Michael Email: michael@mail.su Age: 45 Profession: QA
