@@ -1,5 +1,0 @@
-Model: Subaru
-Color: grey
-Horsepower: 250
-Production year: 2005
-

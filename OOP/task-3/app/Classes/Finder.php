@@ -9,5 +9,6 @@ class Finder extends Worker {
                 return $v;
             }
         }
+        return "User $email did not find!";
     }
 }
