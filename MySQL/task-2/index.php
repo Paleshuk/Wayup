@@ -7,16 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="includes/add_product.php" method="post" enctype="multipart/form-data">
+    <form action="includes/add_product.php" method="post">
         <p>Название товара</p>
         <input type="text" name="title">
         <p>Описание товара</p>
         <textarea name="description"></textarea>
         <p>Категория</p>
         <select name="category">
-            <option>111</option>
-            <option>123</option>
-            <option>112</option>
+            <option value='10'>Товары для дома</option>
+            <option value='11'>Молочная продукция</option>
+            <option value='12'>Мясная продукция</option>
         </select>
         <p>Price</p>
         <input type="number" name="price">

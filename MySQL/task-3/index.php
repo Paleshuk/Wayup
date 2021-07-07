@@ -35,8 +35,21 @@ $products = mysqli_query($db, "SELECT * FROM `products`;");
             <td><?= $product['description'] ?></td>
             <td><?= $product['category_id'] ?></td>
             <td><?= $product['price'] ?> rub</td>
+
+            <!-- <?php 
+            $a = [
+                'id'          => '',
+                'name'        => '',
+                'description' => '',
+                'category_id' => '',
+                'price'       => ' rub',
+            ];
+            foreach($a as $k => $v): ?>
+                <td><?= $product[$k]?><?= $product[$v] ?></td>
+            <?php endforeach ?> -->
+
             <td>
-                <a href="product.php?id=<?= $product['id'] ?>">view</a>
+                <a href="includes/product.php?id=<?= $product['id'] ?>">view</a>
             </td>
         </tr>
         <?php
