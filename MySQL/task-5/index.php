@@ -4,6 +4,7 @@ require_once 'includes/db_connect.php';
 
 $products = mysqli_query($db, "SELECT * FROM `products`;"); 
 
+
 ?>
 
 <!DOCTYPE html>
@@ -25,32 +26,18 @@ $products = mysqli_query($db, "SELECT * FROM `products`;");
             <th>about</th>
         </tr>
         <?php
-
         while ($product = mysqli_fetch_assoc($products)) {    
-
-        ?>
-        <tr>
-            <?php 
-            $a = [
-                'id'          => '',
-                'name'        => '',
-                'description' => '',
-                'category_id' => '',
-                'price'       => ' rub',
-            ];
-            foreach($a as $k => $v): ?>
-                <td><?= $product[$k]?><?= $product[$v] ?></td>
-            <?php endforeach ?>
-            <td>
-                <a href="includes/product.php?id=<?= $product['id'] ?>">view</a>
-                <a href="includes/product_edit.php?id=<?= $product['id'] ?>">edit</a>
-                <a href="includes/product_delete_confirm.php?id=<?= $product['id'] ?>">delete</a>
-            </td>
-        </tr>
-        <?php
-
+            echo "<tr>";
+            foreach ($product as $value) {
+                echo "<td>$value</td>";
+            }
+            echo "<td>
+                    <a href='includes/product.php?id={$product['id']}'>view</a>
+                    <a href='includes/product_edit.php?id={$product['id']}'>edit</a>
+                    <a href='includes/product_delete_confirm.php?id={$product['id']}'>delete</a>
+                </td>
+            </tr>";
         }
-
         ?>
     </table>
     <style>
